@@ -1,0 +1,265 @@
+
+:root {
+  --color-principal: #A9746E;      
+  --color-secundario: #6F4E37;    
+  --color-texto: #4B2E1E;         
+  --color-fondo: #E9DCC9;         
+  --color-fondo-claro: #F5EFE6;   
+  --color-blanco: #ffffff;
+}
+
+
+body {
+  background-color: var(--color-fondo);
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  color: var(--color-texto);
+}
+
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #5a3e2a; 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #4B2E1E;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.company_logo {
+  max-height: 80px;
+}
+
+.header__nav a {
+  margin-left: 20px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.header__nav a:hover {
+  color: var(--color-principal);
+}
+
+
+.main__hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: url('imagenes/fondo-hero.jpg') center/cover no-repeat;
+  color: var(--color-blanco);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+
+.main__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.main__description {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.btn-reserva {
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(169, 116, 110, 0.5);
+}
+
+.btn-reserva:hover {
+  background-color: #885c56; 
+  box-shadow: 0 6px 10px rgba(136, 92, 86, 0.7);
+}
+
+
+.menu {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--color-fondo-claro);
+  border-radius: 12px;
+}
+
+.menu__title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--color-texto);
+}
+
+.menu__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.menu-card {
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+  background: var(--color-blanco);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.menu-card__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-card__name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  margin: 15px 0 8px;
+  color: var(--color-principal);
+}
+
+.menu-card__description {
+  font-size: 1rem;
+  padding: 0 15px 15px;
+  color: #7d5a4f;
+  font-weight: 400;
+}
+
+.menu-card__price {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--color-secundario);
+}
+
+
+#reserva {
+  padding: 40px 20px;
+  background-color: var(--color-blanco);
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  font-family: 'Lato', sans-serif;
+  color: var(--color-texto);
+}
+
+#reserva h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--color-principal);
+}
+
+#reserva form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#reserva label {
+  font-weight: 600;
+}
+
+#reserva input, #reserva select, #reserva textarea {
+  padding: 12px;
+  border: 1px solid #b99b8c;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+#reserva input:focus, #reserva select:focus, #reserva textarea:focus {
+  border-color: var(--color-principal);
+  outline: none;
+}
+
+#reserva button {
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  border: none;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 8px rgba(169, 116, 110, 0.5);
+}
+
+#reserva button:hover {
+  background-color: #885c56;
+  box-shadow: 0 7px 12px rgba(136, 92, 86, 0.7);
+}
+
+
+#mapa {
+  max-width: 600px;
+  height: 400px;
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.footer {
+  background-color: var(--color-texto);
+  color: var(--color-fondo);
+  padding: 30px 20px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: var(--color-principal);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

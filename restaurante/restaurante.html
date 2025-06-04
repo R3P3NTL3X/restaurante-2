@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurante Delicia</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato&family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <img src="imagenes/West & Waffles.jpg" alt="Logo Restaurante" class="company_logo" />
+    <nav class="header__nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#reserva">Reservas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section id="inicio" class="main__hero">
+      <h1 class="main__title">West & Waffles</h1>
+      <p class="main__description">El sabor del oeste en cada bocado</p>
+      <a href="#reserva" class="btn-reserva">Reservar Mesa</a>
+    </section>
+
+    <section id="menu" class="menu">
+      <h2 class="menu__title">Nuestro Menú</h2>
+      <div class="menu__grid">
+        <article class="menu-card">
+          <img src="imagenes/pollo.jpeg" alt="Pollo a la Parrilla" class="menu-card__image" />
+          <h3 class="menu-card__name">Pollo a la Parrilla</h3>
+          <p class="menu-card__description">Jugoso y dorado, acompañado de papas al horno.</p>
+          <p class="menu-card__price">$25.000</p>
+        </article>
+
+        <article class="menu-card">
+          <img src="imagenes/pasta.jpeg" alt="Pasta Alfredo" class="menu-card__image" />
+          <h3 class="menu-card__name">Pasta Alfredo</h3>
+          <p class="menu-card__description">Salsa cremosa, parmesano y un toque de ajo.</p>
+          <p class="menu-card__price">$22.000</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="reserva">
+      <h2>Reserva tu Mesa</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{7,15}" placeholder="Ej: 3001234567" />
+
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" required />
+
+        <label for="hora">Hora</label>
+        <input type="time" id="hora" name="hora" required />
+
+        <label for="personas">Número de Personas</label>
+        <select id="personas" name="personas" required>
+          <option value="" disabled selected>Selecciona</option>
+          <option value="1">1 persona</option>
+          <option value="2">2 personas</option>
+          <option value="3">3 personas</option>
+          <option value="4">4 personas</option>
+          <option value="5+">5 o más</option>
+        </select>
+
+        <button type="submit">Enviar Reserva</button>
+      </form>
+    </section>
+
+  <section id="mapa">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.0181781321026!2d-75.59474778580318!3d6.173276795530951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44296d2763b49d%3A0x26e5f9958697e8b9!2sEnvigado%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1685181212345!5m2!1ses!2sco"
+    width="100%"
+    height="400"
+    style="border:0; border-radius:12px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+
+  <footer class="footer" id="contacto">
+    <p>📍 Cra. 48 #32B Sur-139, Zona 1, Envigado, Antioquia</p>
+    <p>📞 Teléfono: (604) 6050606-3246378134</p>
+    <p>🕐 Horarios: Lun-Dom 12pm - 10pm</p>
+    <p>
+      🌐 Síguenos:
+      <a href="#">Facebook</a> | <a href="#">Instagram</a>
+    </p>
+  </footer>
+
+  <a
+    href="https://wa.me/573137526701?text=Hola%20quiero%20hacer%20una%20reserva"
+    target="_blank"
+    class="whatsapp-btn"
+    aria-label="Contactar por WhatsApp"
+    >&#x1F4AC;</a
+  >
+</body>
+</html>
